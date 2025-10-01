@@ -4,4 +4,4 @@ Contained within is the various files to make my portfolio website work.
 
 
 ### What's the web address to see the site?  
-ben-beaton.github.io
+https://ben-heaton.github.io/
