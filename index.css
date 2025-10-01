@@ -1,0 +1,69 @@
+/* ---- General ----------------------------------------------------------------------------------------------------- */
+h1, h2 {
+    color: black;
+}
+
+#index_background_picture {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#index_section_container {
+    font-family: Verdana, Ariel, 'Trebuchet MS', sans-serif;
+    z-index: 1;
+    position: relative;
+    top: 150px;
+    font-size: 1.5vw;   /* 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm. */
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* ---- Enter portfolio hyperlink ----------------------------------------------------------------------------------- */
+/* The order below ensures each state behaves as expected,
+   and no rule unintentionally overrides another Remember LoVe HAte. */
+
+a:link { /* Link = The link has not been visited yet. */
+    color: blue;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    text-decoration: black;
+    padding: 15px;
+    border: black solid 1px;
+    border-radius: 12px;
+}
+
+a:visited { /* Visited = The link has been visited before. */
+    color: purple;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    text-decoration: black;
+    padding: 15px;
+    border: black solid 1px;
+    border-radius: 12px;
+}
+
+a:hover {   /* Hover = The mouse is hovering over the link. */
+    color: blue;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    text-decoration: black;
+    padding: 15px;
+    border: black solid 1px;
+    border-radius: 12px;
+    font-size: 1.6vw;
+}
+
+a:active { /* The link is being clicked (mousedown). */
+    color: blue;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px black;
+    text-decoration: black;
+    padding: 15px;
+    border: black solid 1px;
+    border-radius: 12px;
+}

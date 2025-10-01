@@ -1,0 +1,460 @@
+@media only screen and (min-width: 1024px) {
+    /* ---- General ------------------------------------------------------------------------------------------------- */
+    body {
+        font-family: Verdana, Ariel, 'Trebuchet MS', sans-serif;
+    }
+
+    #background_image {
+        position: fixed; /* Makes it stick to the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("portfolio media/pictures/white_wave.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6; /* 60% */
+        z-index: -1; /* Pushes the image behind the main content */
+    }
+
+    .section_container {
+        font-size: 1.2vw; /* 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm. */
+        padding: 10px;
+        border: black solid 1px;
+        border-radius: 12px;
+    }
+
+    /* ---- About Me Section ---------------------------------------------------------------------------------------- */
+    #about_me_container_1 {
+        /*border: red solid 5px;*/
+        display: flex;
+        justify-content: space-evenly; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #about_me_text_1 {
+        /*border: hotpink solid 5px;*/
+    }
+
+    #about_me_pic_1 {
+        /*border: hotpink solid 5px;*/
+        width: auto;
+        max-height: 300px;
+    }
+
+
+    #about_me_container_2 {
+        /*border: blue solid 5px;*/
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #about_me_pic_2 {
+        /*border: deepskyblue solid 5px;*/
+    }
+
+    #about_me_text_2 {
+        /*border: deepskyblue solid 5px;*/
+    }
+
+
+    /* ---- Skills Section ------------------------------------------------------------------------------------------ */
+    #skills_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex_item_left {
+        flex-direction: column;
+    }
+
+    .flex_item_right {
+        flex-direction: column;
+    }
+
+
+    /* ---- Work Examples Section ----------------------------------------------------------------------------------- */
+    #work_examples_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work_example_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #javascript_work_example_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    button {
+        padding: 10px;
+        margin: 10px;
+        border: black solid 1px;
+        border-radius: 12px;
+    }
+
+    button:hover {
+        background-color: #87CEEB;
+        font-weight: bold;
+    }
+
+    .work_example_container {
+        display: none;
+        color: black;
+    }
+
+    /* ---- Current Project Section --------------------------------------------------------------------------------- */
+    #current_project_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; /* Main axis - Row */
+    }
+
+    #drink_app_design_pic {
+        width: 20%;
+    }
+
+    /* ---- Github etc Section -------------------------------------------------------------------------------------- */
+    #github_etc_container {
+        text-align: center;
+    }
+
+    #github_etc_container img {
+        padding: 20px;
+        border-radius: 40px;
+        /*background-color: yellow;*/
+        border: deepskyblue outset 0.5vw;
+    }
+
+    #github_etc_container a img:hover {
+        padding: 20px;
+        border-radius: 40px;
+        background-color: lightskyblue;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+ /* For tablet screens. */
+
+@media only screen and (min-width: 425px) {
+    /* ---- General ------------------------------------------------------------------------------------------------- */
+    body {
+        font-family: Verdana, Ariel, 'Trebuchet MS', sans-serif;
+    }
+
+    #background_image {
+        position: fixed; /* Makes it stick to the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("portfolio media/pictures/white_wave.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6; /* 60% */
+        z-index: -1; /* Pushes the image behind the main content */
+    }
+
+    .section_container {
+        font-size: 1.2vw; /* 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm. */
+        padding: 10px;
+        border: black solid 1px;
+        border-radius: 12px;
+    }
+
+    /* ---- About Me Section ---------------------------------------------------------------------------------------- */
+    #about_me_container_1 {
+        /*border: red solid 5px;*/
+        display: flex;
+        justify-content: space-evenly; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #about_me_text_1 {
+        /*border: hotpink solid 5px;*/
+    }
+
+    #about_me_pic_1 {
+        /*border: hotpink solid 5px;*/
+        width: auto;
+        max-height: 150px;
+    }
+
+
+    #about_me_container_2 {
+        /*border: blue solid 5px;*/
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #about_me_pic_2 {
+        /*border: deepskyblue solid 5px;*/
+    }
+
+    #about_me_text_2 {
+        /*border: deepskyblue solid 5px;*/
+    }
+
+
+    /* ---- Skills Section ------------------------------------------------------------------------------------------ */
+    #skills_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex_item_left {
+        flex-direction: column;
+    }
+
+    .flex_item_right {
+        flex-direction: column;
+    }
+
+
+    /* ---- Work Examples Section ----------------------------------------------------------------------------------- */
+    #work_examples_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work_example_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #javascript_work_example_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    button {
+        padding: 10px;
+        margin: 10px;
+        border: black solid 1px;
+        border-radius: 12px;
+    }
+
+    button:hover {
+        background-color: #87CEEB;
+        font-weight: bold;
+    }
+
+    .work_example_container {
+        display: none;
+        color: black;
+    }
+
+    /* ---- Current Project Section --------------------------------------------------------------------------------- */
+    #current_project_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; /* Main axis - Row */
+    }
+
+    #drink_app_design_pic {
+        width: 20%;
+    }
+
+    /* ---- Github etc Section -------------------------------------------------------------------------------------- */
+    #github_etc_container {
+        text-align: center;
+    }
+
+    #github_etc_container img {
+        padding: 20px;
+        border-radius: 40px;
+        /*background-color: yellow;*/
+        border: deepskyblue outset 0.5vw;
+    }
+
+    #github_etc_container a img:hover {
+        padding: 20px;
+        border-radius: 40px;
+        background-color: lightskyblue;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* For small to large mobile screens. */
+
+@media only screen and (min-width: 320px) {
+    /* ---- General ------------------------------------------------------------------------------------------------- */
+    body {
+        font-family: Verdana, Ariel, 'Trebuchet MS', sans-serif;
+    }
+
+    #background_image {
+        position: fixed; /* Makes it stick to the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("portfolio media/pictures/white_wave.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6; /* 60% */
+        z-index: -1; /* Pushes the image behind the main content */
+    }
+
+    .section_container {
+        font-size: 1.2vw; /* 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm. */
+        padding: 10px;
+        border: black solid 1px;
+        border-radius: 12px;
+    }
+
+    /* ---- About Me Section ---------------------------------------------------------------------------------------- */
+    #about_me_container_1 {
+        /*border: red solid 5px;*/
+        display: flex;
+        justify-content: space-evenly; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #about_me_text_1 {
+        /*border: hotpink solid 5px;*/
+    }
+
+    #about_me_pic_1 {
+        /*border: hotpink solid 5px;*/
+        width: auto;
+        max-height: 300px;
+    }
+
+
+    #about_me_container_2 {
+        /*border: blue solid 5px;*/
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #about_me_pic_2 {
+        /*border: deepskyblue solid 5px;*/
+    }
+
+    #about_me_text_2 {
+        /*border: deepskyblue solid 5px;*/
+    }
+
+
+    /* ---- Skills Section ------------------------------------------------------------------------------------------ */
+    #skills_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex_item_left {
+        flex-direction: column;
+    }
+
+    .flex_item_right {
+        flex-direction: column;
+    }
+
+
+    /* ---- Work Examples Section ----------------------------------------------------------------------------------- */
+    #work_examples_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work_example_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    #javascript_work_example_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Main axis - Row */
+        align-items: center; /* Cross axis - Column */
+    }
+
+    button {
+        padding: 10px;
+        margin: 10px;
+        border: black solid 1px;
+        border-radius: 12px;
+    }
+
+    button:hover {
+        background-color: #87CEEB;
+        font-weight: bold;
+    }
+
+    .work_example_container {
+        display: none;
+        color: black;
+    }
+
+    /* ---- Current Project Section --------------------------------------------------------------------------------- */
+    #current_project_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /*justify-content: center; !* Main axis - Row *!*/
+        align-items: center;
+    }
+
+    #drink_app_design_pic {
+        width: 60%;
+    }
+
+    /* ---- Github etc Section -------------------------------------------------------------------------------------- */
+    #github_etc_container {
+        text-align: center;
+    }
+
+    #github_etc_container img {
+        padding: 20px;
+        border-radius: 40px;
+        /*background-color: yellow;*/
+        border: deepskyblue outset 0.5vw;
+    }
+
+    #github_etc_container a img:hover {
+        padding: 20px;
+        border-radius: 40px;
+        background-color: lightskyblue;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

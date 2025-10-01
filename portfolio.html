@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <body>
+        <div id="background_image"></div>
+
+        <section class="section_container">
+            <div id="about_me_container_1">
+                <div id="about_me_text_1">
+                    <h2>Who am I?</h2>
+                    <p>My name is Ben; and until recently I was a chemistry technician at my local university.</p>
+                    <p>I gained experience in the role and even earned my science degree through part-time study.</p>
+                    <p>However, gradually I lost enthusiasm with chemistry and realised I needed something different.</p>
+                </div>
+                <div>
+                    <img id='about_me_pic_1' src="portfolio%20media/pictures/profile_pic.jpg" alt="profile_picture">
+                </div>
+            </div>
+            <br>
+            <div id="about_me_container_2">
+                <div>
+                    <img id='about_me_pic_2' src="portfolio%20media/pictures/studying.png" alt="studying_pic">
+                </div>
+                <div id="about_me_text_2">
+                    <p>After some soul-searching I chose coding because there is ample opportunity for growth and career progression.</p>
+                    <p>So far I am enjoying it. Being able to see what you're building gives me a real buzz.</p>
+                    <p>Ultimately, I'd like to grow into a professional.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section class="section_container">
+            <h2>Languages I have been exposed to are:</h2>
+            <br>
+            <div id="skills_container">
+                <img class="flex_item_left" src="portfolio%20media/pictures/html-5.svg" alt="html_logo">
+                <img class="flex_item_left" src="portfolio%20media/pictures/css-3.svg" alt="css_logo">
+                <img class="flex_item_left" src="portfolio%20media/pictures/javascript.svg" alt="javascript_logo">
+                <img class="flex_item_left" src="portfolio%20media/pictures/python.svg" alt="python_logo">
+<!--                <img class="flex_item_right" src="portfolio%20media/pictures/c-sharp.svg" alt="csharp_logo">-->
+<!--                <img class="flex_item_right" src="portfolio%20media/pictures/java.svg" alt="java_logo">-->
+                <img class="flex_item_right" src="portfolio%20media/pictures/postgresql.svg" alt="postgresql_logo">
+                <img class="flex_item_right" src="portfolio%20media/pictures/jquery.svg" alt="jquery_logo">
+                <img class="flex_item_right" src="portfolio%20media/pictures/php.svg" alt="php_logo">
+
+            </div>
+        </section>
+        <br>
+
+        <section class="section_container">
+            <div id="work_examples_container">
+                <h2>Click the buttons to see a few examples of work:</h2>
+                <button id="js_button" onClick="show_hide_javascript_work_example_container()">JavaScript</button>
+                <div class="work_example_container" id="javascript_work_example_container">
+                    <p>This example is the classic weather app.</p>
+                    <p>I built this to help learn about API calls.</p>
+                    <p>The app is functional; however for API key protection reasons I can only show a screenshot for now.</p>
+                    <iframe id="weather_app_iframe" src="Showcase/Weather App - Copy/weatherApp.html" height="540" width="960" loading="lazy"></iframe>
+                    <p>Weather data from London (29/09/25)</p>
+                    <img src=".\portfolio media/pictures/weather_app_working.png" alt="screenshot_of_working_weather_app">
+                </div>
+
+                <button id="jq_button" onClick="show_hide_jQuery_work_example_container()">jQuery</button>
+                <div class="work_example_container" id="jQuery_work_example_container">
+                    <p>JQuery PLACEHOLDER</p>
+                </div>
+
+                <button id="python_button" onClick="show_hide_python_work_example_container()">Python</button>
+                <div class="work_example_container" id="python_work_example_container">
+                    <p>Python PLACEHOLDER</p>
+                </div>
+
+<!--                <button id='csharp_button' onClick="show_hide_csharp_work_example_container()">C#</button>-->
+<!--                <div class="work_example_container" id="csharp_work_example_container">-->
+<!--                    <p>c# PLACEHOLDER</p>-->
+<!--                </div>-->
+
+<!--                <button id='java_button' onClick="show_hide_java_work_example_container()">Java</button>-->
+<!--                <div class="work_example_container" id="java_work_example_container">-->
+<!--                    <p>Java PLACEHOLDER</p>-->
+<!--                </div>-->
+            </div>
+        </section>
+        <br>
+
+        <section class="section_container">
+            <div id="current_project_container">
+                <div id="#cpc_text">
+                    <h2>My current personal project is:</h2>
+                    <p>An alcoholic beverage record app!</p>
+                    <p>At the moment I'm only in the design stage. The picture is a wireframe of the app.</p>
+                    <br>
+                    <h3>Why are you building this?</h3>
+                    <p>I like to try out guest beers and new wines when I go out; sometimes you find a great new drink!</p>
+                    <p>To remember them I write them into my phones note app.</p>
+                    <p>However, it is clunky to edit, has no search/sort capability, and basically not suitable for my needs.</p>
+                    <p>So I'm challenging myself as a new coder to try to build this app.</p>
+                    <br>
+                </div>
+                <img id="drink_app_design_pic" src="portfolio media/pictures/drink_app_design.png" alt="drink_app_design">
+            </div>
+        </section>
+        <br>
+
+        <section class="section_container">
+            <div id="github_etc_container">
+                <h2>Thank you for visiting my portfolio!</h2>
+                <p>More of my work is on</p>
+                <a href="https://github.com/Ben-Heaton">
+                    <img src="portfolio%20media/pictures/github_word_icon.svg" alt="github_word_icon">
+                </a>
+            </div>
+        </section>
+        <br>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
